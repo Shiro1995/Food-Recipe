@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemMenu>
+    <Item>
+        <id>1</id>
+        <name>Sweet</name>
+    </Item>
+    <Item>
+        <id>2</id>
+        <name>Meat</name>
+    </Item>
+    <Item>
+        <id>3</id>
+        <name>Soup</name>
+    </Item>
+    <Item>
+        <id>4</id>
+        <name>Breads, Muffins</name>
+    </Item>
+<!--    <Item>-->
+<!--        <id>5</id>-->
+<!--        <name>Breakfast</name>-->
+<!--    </Item>-->
+<!--    <Item>-->
+<!--        <id>6</id>-->
+<!--        <name>Deserts</name>-->
+<!--    </Item>-->
+<!--    <Item>-->
+<!--        <id>7</id>-->
+<!--        <name>Drinks</name>-->
+<!--    </Item>-->
+<!--    <Item>-->
+<!--        <id>8</id>-->
+<!--        <name>Main Courses</name>-->
+<!--    </Item>-->
+</ItemMenu>
