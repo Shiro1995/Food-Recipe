@@ -33,6 +33,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     var isEdit:Bool = false
     var state:Int = 0
     var selectedType:Int = 0
+    var imageLink:String?
     override func viewDidLoad() {
         super.viewDidLoad()
         selectedType = recipeInfo.typeId!
@@ -40,6 +41,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         self.lbName.borderStyle = .none
         lbName?.text = recipeInfo.name
         let dataDecoded = Data(base64Encoded: recipeInfo.imageLink!, options: .ignoreUnknownCharacters)!
+        imageLink = recipeInfo.imageLink
         self.image.image =  UIImage(data: dataDecoded as Data)!
         navigationItem.rightBarButtonItem = EditButton
         let aboutButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(clickEdit))
@@ -101,7 +103,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
                             self.steps[row].name = result[1]
                         }
                         tableView?.reloadData()
-                        print(result)
                     }
                 }else{
                     dest.didSendData = { [self] result in
@@ -109,7 +110,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
                             steps.append(StepsModel(id: Int(id), recipeId: recipeInfo.id!, steps: Int(result[0])!, name: result[1]))
                         }
                         tableView?.reloadData()
-                        print(result)
                     }
                 }
             } else{
@@ -124,7 +124,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
                             self.ingres[row].amount = result[1]
                         }
                         tableView?.reloadData()
-                        print(result)
                     }
                 } else{
                     dest.didSendData = { [self] result in
@@ -132,7 +131,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
                             ingres.append(IngredientsModel(id: Int(id), recipeId: recipeInfo.id!, name: result[0], amount: result[1]))
                         }
                         tableView?.reloadData()
-                        print(result)
                     }
                 }
             }
@@ -153,7 +151,12 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         } else{
             let imageData:NSData = image.image!.pngData()! as NSData
             let strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
-            if ListRecipe.shared.update(id: Int64(recipeInfo.id!), typeId: Int64(selectedType), name: lbName.text, imageLink: strBase64) {
+            if (strBase64 == imageLink) {
+                imageLink = nil
+            } else{
+                imageLink = strBase64
+            }
+            if ListRecipe.shared.update(id: Int64(recipeInfo.id!), typeId: Int64(selectedType), name: lbName.text, imageLink: strBase64 ) {
                 let recipe = RecipeModel(id: recipeInfo.id, name: lbName.text ?? "", typeId: recipeInfo.typeId!, imageLink: strBase64)
                 didEdit?(recipe)
             }

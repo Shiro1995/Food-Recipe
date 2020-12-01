@@ -44,7 +44,6 @@ class AddViewController: UIViewController{
                 dest.didSendData = { [self] result in
                     let step = StepsModel(id: 0, recipeId: count, steps: Int(result[0])!, name: result[1])
                     self.steps.append(step)
-                    print(result)
                     tableview.reloadData()
                 }
             } else{
@@ -52,7 +51,6 @@ class AddViewController: UIViewController{
                 dest.Stringlabel2 = "Amount"
                 dest.didSendData = { [self] result in
                     let ingre = IngredientsModel(id: 0, recipeId: count, name: result[0], amount: result[1])
-                    print(result)
                     ingres.append(ingre)
                     tableview.reloadData()
                 }
@@ -96,7 +94,6 @@ class AddViewController: UIViewController{
     
     @IBAction func btOnpress(_ sender: Any) {
         if(name.text == "" || typeField.text == "") {
-            print("Please fill full field")
             let refreshAlert = UIAlertController(title: "Error!", message: "Please fill full field!", preferredStyle: UIAlertController.Style.alert)
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
               }))
@@ -159,7 +156,6 @@ class AddViewController: UIViewController{
         actionSheetController.addAction(cancelAction)
 
         present(actionSheetController, animated: true) {
-            print("option menu presented")
         }
     }
 }
