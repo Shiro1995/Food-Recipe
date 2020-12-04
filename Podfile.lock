@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: dcc397ad19706db8a27ad561090a31b60aafbf0b
+PODS:
+  - SQLite.swift (0.10.1)
+
+DEPENDENCIES:
+  - SQLite.swift (~> 0.10.1)
+
+SPEC REPOS:
+  trunk:
+    - SQLite.swift
+
+SPEC CHECKSUMS:
+  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+
+PODFILE CHECKSUM: 25d6ef5078801dae884fa4fc05919b5a3a2d6d87
 
 COCOAPODS: 1.9.2

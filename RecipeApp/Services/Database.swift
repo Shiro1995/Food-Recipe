@@ -8,6 +8,7 @@
 import Foundation
 import SQLite
 
+
 class Database {
     static let shared = Database()
     public let connection: Connection?

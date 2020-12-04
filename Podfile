@@ -9,6 +9,7 @@ target 'RecipeApp' do
 
   target 'RecipeAppTests' do
     inherit! :search_paths
+    pod 'SQLite.swift', '~> 0.10.1'
     # Pods for testing
   end
 
