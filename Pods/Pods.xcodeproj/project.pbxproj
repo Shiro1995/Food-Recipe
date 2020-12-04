@@ -114,34 +114,7 @@
 		CFB4F30571EC162E14170234CB380703 /* Pods-RecipeAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RecipeAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DAFFF9452CA68E4ADC23772076E310EC /* Pods-RecipeAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipeAppTests-dummy.m"; sourceTree = "<group>"; };
 		DC6A9CD122429885D089D1E61A57B7F1 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = SQLite/Foundation.swift; sourceTree = "<group>"; };
-		E096E0E42579D4F000D15D2E /* SQLite.swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SQLite.swift-master"; path = "../../../Downloads/SQLite.swift-master"; sourceTree = "<group>"; };
-		E096E0EC2579D51A00D15D2E /* SQLiteObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLiteObjc.h; sourceTree = "<group>"; };
-		E096E0ED2579D51A00D15D2E /* SQLiteObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteObjc.m; sourceTree = "<group>"; };
-		E096E0EE2579D51A00D15D2E /* fts3_tokenizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
-		E096E0F12579D51A00D15D2E /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		E096E0F22579D51A00D15D2E /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
-		E096E0F32579D51A00D15D2E /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		E096E0F42579D51A00D15D2E /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
-		E096E0F52579D51A00D15D2E /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
-		E096E0F62579D51A00D15D2E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		E096E0F82579D51A00D15D2E /* Cipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
-		E096E0F92579D51A00D15D2E /* RTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
-		E096E0FA2579D51A00D15D2E /* FTS4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTS4.swift; sourceTree = "<group>"; };
-		E096E0FB2579D51A00D15D2E /* FTS5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTS5.swift; sourceTree = "<group>"; };
-		E096E0FC2579D51A00D15D2E /* Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
-		E096E0FD2579D51A00D15D2E /* SQLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
-		E096E0FF2579D51A00D15D2E /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
-		E096E1002579D51A00D15D2E /* Coding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
-		E096E1012579D51A00D15D2E /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
-		E096E1022579D51A00D15D2E /* CoreFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFunctions.swift; sourceTree = "<group>"; };
-		E096E1032579D51A00D15D2E /* Collation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collation.swift; sourceTree = "<group>"; };
-		E096E1042579D51A00D15D2E /* CustomFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFunctions.swift; sourceTree = "<group>"; };
-		E096E1052579D51A00D15D2E /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		E096E1062579D51A00D15D2E /* Setter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
-		E096E1072579D51A00D15D2E /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		E096E1082579D51A00D15D2E /* Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
-		E096E1092579D51A00D15D2E /* AggregateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateFunctions.swift; sourceTree = "<group>"; };
-		E096E10A2579D51A00D15D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C77B832579E3BD0066E509 /* SQLite.swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SQLite.swift-master"; path = "../../../Downloads/SQLite.swift-master"; sourceTree = "<group>"; };
 		EEEB80242D4A102D6B5D5E55F43156F7 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		EF8609EF684608B79B6114FCF320F9A0 /* Pods-RecipeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F2DEDBEA42555AD8D19AB220C04FCF04 /* Pods-RecipeApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipeApp-dummy.m"; sourceTree = "<group>"; };
@@ -301,8 +274,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				E096E0E92579D51A00D15D2E /* Sources */,
-				E096E0E42579D4F000D15D2E /* SQLite.swift-master */,
+				E0C77B832579E3BD0066E509 /* SQLite.swift-master */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				90C00B39BD75708541B9467EF5A8357F /* Pods */,
@@ -317,88 +289,6 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E096E0E92579D51A00D15D2E /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				E096E0EA2579D51A00D15D2E /* SQLiteObjc */,
-				E096E0EF2579D51A00D15D2E /* SQLite */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		E096E0EA2579D51A00D15D2E /* SQLiteObjc */ = {
-			isa = PBXGroup;
-			children = (
-				E096E0EB2579D51A00D15D2E /* include */,
-				E096E0ED2579D51A00D15D2E /* SQLiteObjc.m */,
-				E096E0EE2579D51A00D15D2E /* fts3_tokenizer.h */,
-			);
-			path = SQLiteObjc;
-			sourceTree = "<group>";
-		};
-		E096E0EB2579D51A00D15D2E /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E096E0EC2579D51A00D15D2E /* SQLiteObjc.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		E096E0EF2579D51A00D15D2E /* SQLite */ = {
-			isa = PBXGroup;
-			children = (
-				E096E0F02579D51A00D15D2E /* Core */,
-				E096E0F62579D51A00D15D2E /* Helpers.swift */,
-				E096E0F72579D51A00D15D2E /* Extensions */,
-				E096E0FC2579D51A00D15D2E /* Foundation.swift */,
-				E096E0FD2579D51A00D15D2E /* SQLite.h */,
-				E096E0FE2579D51A00D15D2E /* Typed */,
-				E096E10A2579D51A00D15D2E /* Info.plist */,
-			);
-			path = SQLite;
-			sourceTree = "<group>";
-		};
-		E096E0F02579D51A00D15D2E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				E096E0F12579D51A00D15D2E /* Connection.swift */,
-				E096E0F22579D51A00D15D2E /* Blob.swift */,
-				E096E0F32579D51A00D15D2E /* Errors.swift */,
-				E096E0F42579D51A00D15D2E /* Statement.swift */,
-				E096E0F52579D51A00D15D2E /* Value.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		E096E0F72579D51A00D15D2E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E096E0F82579D51A00D15D2E /* Cipher.swift */,
-				E096E0F92579D51A00D15D2E /* RTree.swift */,
-				E096E0FA2579D51A00D15D2E /* FTS4.swift */,
-				E096E0FB2579D51A00D15D2E /* FTS5.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E096E0FE2579D51A00D15D2E /* Typed */ = {
-			isa = PBXGroup;
-			children = (
-				E096E0FF2579D51A00D15D2E /* Query.swift */,
-				E096E1002579D51A00D15D2E /* Coding.swift */,
-				E096E1012579D51A00D15D2E /* Expression.swift */,
-				E096E1022579D51A00D15D2E /* CoreFunctions.swift */,
-				E096E1032579D51A00D15D2E /* Collation.swift */,
-				E096E1042579D51A00D15D2E /* CustomFunctions.swift */,
-				E096E1052579D51A00D15D2E /* DateAndTimeFunctions.swift */,
-				E096E1062579D51A00D15D2E /* Setter.swift */,
-				E096E1072579D51A00D15D2E /* Operators.swift */,
-				E096E1082579D51A00D15D2E /* Schema.swift */,
-				E096E1092579D51A00D15D2E /* AggregateFunctions.swift */,
-			);
-			path = Typed;
 			sourceTree = "<group>";
 		};
 		F1C6B2EF663BFA9A40860E5270C42F68 /* Pods-RecipeAppTests */ = {
