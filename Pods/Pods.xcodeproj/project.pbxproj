@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,7 @@
 		BF1A92124F6327C845631148C925011B /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014DACC8822F161F3CF95BAECE76B76 /* FTS4.swift */; };
 		C985C6330349E64CE3A9ACBF4AD40C5F /* Pods-RecipeAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFFF9452CA68E4ADC23772076E310EC /* Pods-RecipeAppTests-dummy.m */; };
 		DF76910323BF29A78B8D09A3CE302448 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6844035E603EF42CA4B50DFD72867 /* Operators.swift */; };
+		E0A378A0257A0BF70069DED9 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = E0A3789F257A0BF70069DED9 /* SQLite */; };
 		E487205A215F19C33E851783F5E6B26B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		E9889075CFC8C4EFD85CB8545EC9A298 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 7023F9DAE7ACADEC3D7E4F00FABC2F85 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA515428B7A5AE685D25631F669E8613 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3C91DE29BD2DE9E80586B675ECB053 /* Connection.swift */; };
@@ -114,7 +115,6 @@
 		CFB4F30571EC162E14170234CB380703 /* Pods-RecipeAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RecipeAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DAFFF9452CA68E4ADC23772076E310EC /* Pods-RecipeAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipeAppTests-dummy.m"; sourceTree = "<group>"; };
 		DC6A9CD122429885D089D1E61A57B7F1 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = SQLite/Foundation.swift; sourceTree = "<group>"; };
-		E0C77B832579E3BD0066E509 /* SQLite.swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SQLite.swift-master"; path = "../../../Downloads/SQLite.swift-master"; sourceTree = "<group>"; };
 		EEEB80242D4A102D6B5D5E55F43156F7 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		EF8609EF684608B79B6114FCF320F9A0 /* Pods-RecipeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F2DEDBEA42555AD8D19AB220C04FCF04 /* Pods-RecipeApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipeApp-dummy.m"; sourceTree = "<group>"; };
@@ -135,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A378A0257A0BF70069DED9 /* SQLite in Frameworks */,
 				0D848F969B0F1E7F01C19D8BE4DE87CC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +275,6 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				E0C77B832579E3BD0066E509 /* SQLite.swift-master */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				90C00B39BD75708541B9467EF5A8357F /* Pods */,
@@ -419,6 +419,9 @@
 			dependencies = (
 			);
 			name = "Pods-RecipeApp";
+			packageProductDependencies = (
+				E0A3789F257A0BF70069DED9 /* SQLite */,
+			);
 			productName = "Pods-RecipeApp";
 			productReference = 447CC1B4B2C6A015D2B719C588138058 /* Pods_RecipeApp.framework */;
 			productType = "com.apple.product-type.framework";
@@ -441,6 +444,9 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			packageReferences = (
+				E0A3789E257A0BF70069DED9 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 46A00D172BB89644B930F42E2326C7B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1028,6 +1034,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0A3789E257A0BF70069DED9 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0A3789F257A0BF70069DED9 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A3789E257A0BF70069DED9 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
